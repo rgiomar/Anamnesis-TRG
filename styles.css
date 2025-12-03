@@ -1,0 +1,17 @@
+:root {
+  --accent:#114b5f;
+  --muted:#666;
+  --bg:#f7f7f8;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif; margin:0; color:#222; background:var(--bg)}
+.container{max-width:1000px; margin:0 auto; padding:20px}
+.site-header{background:white; padding:20px 0; border-bottom:1px solid #e6e6e6}
+.logo{height:56px; vertical-align:middle}
+.lead{color:var(--muted); margin-top:6px}
+.form-wrap{background:white; padding:16px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.03)}
+.info{margin-top:16px; color:var(--muted)}
+.site-footer{padding:20px 0; text-align:center; color:var(--muted); font-size:14px}
+@media (min-width:900px){
+  main{display:grid; grid-template-columns: 1fr 320px; gap:24px}
+}
